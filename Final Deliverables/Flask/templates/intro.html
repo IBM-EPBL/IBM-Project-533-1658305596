@@ -1,0 +1,214 @@
+<html>
+<script>
+
+
+</script>
+
+
+<style>
+.header {	position: relative;
+			top:0;	
+			margin:0px;
+			z-index: 1;
+			left: 0px;
+			right: 0px;
+			position: fixed;
+			background-color: rgb(191, 138, 2) ;
+			color: white;
+			box-shadow: 0px 8px 4px rgb(121, 85, 1);
+			overflow: hidden;
+			padding-left:20px;
+			font-family: 'Josefin Sans';
+			font-size: 2vw;
+			width: 100%;
+			height:10%;
+			text-align: center;
+		}
+		.topnav {
+  overflow: hidden;
+  background-color: #FCAD98;
+}
+
+.topnav-right a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.topnav-right a.active {
+  background-color: #936200;
+  color: rgb(238, 226, 234);
+}
+
+.topnav-right a:hover {
+  background-color: rgb(255, 233, 67);
+  color: rgb(6, 27, 36);
+}
+
+.topnav-right {
+  float: right;
+  padding-right:100px;
+}
+
+
+body {
+
+  background-color:burlywood;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-size: cover;
+  background-position: 0px 0px;
+  }
+  .button {
+  background-color: #091425; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 16px;
+}
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+form {border: 3px solid #f1f1f1; margin-left:400px;margin-right:400px;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  margin-bottom:18px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #091425;
+  color: white;
+  padding: 14px 20px;
+  margin-bottom:10px;
+  border: none;
+  cursor: pointer;
+  width: 17%;
+  border-radius:4px;
+  font-family:Montserrat;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 30%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+
+div1 {
+    align-self:center;
+    align-items: center;
+    text-align: center;
+    width: 650spx;
+    height: 800px;
+    padding: 100px;
+    margin: 20px;
+    position: absolute;
+  }
+
+.home{
+	margin:80px;
+	
+  width: 84%;
+  height: 500px;
+  padding-top:10px;
+  padding-left: 30px;  
+  
+}
+.login{
+	margin:80px;
+	box-sizing: content-box;  
+  width: 84%;
+  height: 420px;
+  padding: 30px;  
+  border: 10px solid blue;
+}
+.left,.right{
+ box-sizing: content-box; 
+ height: 400px;
+ margin:20px;
+ border: 10px solid blue;
+}
+
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+</style>
+
+<body>
+
+<div class="header">    
+<div style="width:50%;float:left;font-size:2vw;text-align:left;color:#ffffff; padding-top:1%;padding-left:5%;">Hand Gesture System</div>
+  <div class="topnav-right"style="padding-top:0.5%;">
+    
+    <a class="active" href="{{ url_for('home')}}">Home</a>
+    <a class="active" href="{{ url_for('intro')}}"><b>Introduction</b></a>
+    <a class="active" href="{{ url_for('image1')}}">Launch</a>
+  </div>
+</div>
+
+<div1 style=""><br>
+  <br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br><br>
+  
+  <h1><font color="Black" size="6" font-family="Roboto">INTRODUCTION</h1>
+  <br>
+  <img src="{{url_for('static', filename='pic.png')}}" height="400px" width="800px"></img>
+  <p></p>
+  <br>
+<p><i><font color="Black" size="4" fonr-family="sans-serif" ></i>Humans are able to recognize body and sign language easily. This is possible due to the combination of vision and synaptic interactions that were formed along brain development. 
+
+  In this project Gesture based Desktop automation, First the model is trained pre trained on the images of different hand gestures, such as a showing numbers with fingers as 1,2,3,4.
+   This model uses the integrated webcam to capture the video frame. The image of the gesture captured in the video frame is compared with  the Pre-trained model and the gesture is identified. 
+Based on Gesture result, Image is modified.
+</p>
+<br>
+
+  </div1>
+
+</body>
+
+</html>

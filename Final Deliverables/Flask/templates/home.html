@@ -1,0 +1,143 @@
+<html>
+<script>
+
+
+</script>
+
+
+<style>
+.header {	position: relative;
+			top:0;	
+			margin:0px;
+			z-index: 1;
+			left: 0px;
+			right: 0px;
+			position: fixed;
+			background-color:rgb(254, 61, 80) ;
+			color: rgb(255, 29, 89);
+			box-shadow: 0px 8px 4px rgb(135, 12, 12);
+			overflow: hidden;
+			padding-left:20px;
+			font-family: 'Inter';
+			font-size: 2vw;
+			width: 100%;
+			height:10%;
+			text-align: center;
+		}
+		.topnav {
+  overflow: hidden;
+  background-color: #48b56c;
+}
+
+.topnav-right a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+.topnav-right a.active {
+  background-color: #960213;
+  color: rgb(238, 226, 234);
+}
+.topnav-right a:hover {
+  background-color: rgb(203, 45, 1);
+  color: rgb(6, 27, 36);
+}
+
+.topnav-right {
+  float: right;
+  padding-right:100px;
+}
+
+body {
+
+  
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: 0px 0px;
+  }
+  .button {
+  background-color: #091425; 
+  border: none;
+  color: rgb(181, 228, 236);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 16px;
+}
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+form {border: 3px solid #f1f1f1; margin-left:400px;margin-right:400px;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  margin-bottom:18px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #091425;
+  color: rgb(181, 228, 236);
+  padding: 14px 20px;
+  margin-bottom:10px;
+  border: none;
+  cursor: pointer;
+  width: 17%;
+  border-radius:4px;
+  font-family:Montserrat;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+
+h1 {
+  cursor: default;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  margin: 70px;
+  display: block;
+  text-align: center;
+}
+
+
+</style>
+
+<body>
+<h1 style="color: rgb(44, 44, 44);">
+    <br>
+    <span>HAND   GESTURE   RECOGNITION OF RADIOLOGY   IMAGES</span>
+  </br>
+    <span>THROUGH STERILE   BROWSING</span>
+  </br>
+<br>
+<img src="{{url_for('static', filename='pic.png')}}" height="300px" width="700px"></img>
+    
+</h1>
+<div class="header">    
+<div style="width:50%;float:left;font-size:2vw;text-align:left;color:#121212; padding-top:1%;padding-left:5%;"><b>HAND GESTURE RECOGNITION</b></div>
+  <div class="topnav-right"style="padding-top:0.5%;color:white">
+    <a  class="active" href="{{ url_for('home')}}"><b>Home</b></a>
+    <a  class="active" href="{{ url_for('intro')}}">Introduction</a>
+    <a  class="active" href="{{ url_for('image1')}}">Launch</a>
+  </div>
+</div>
+
+</body>
+
+</html>
